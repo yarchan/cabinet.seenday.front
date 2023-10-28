@@ -1,0 +1,10 @@
+.unload{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+@import "unload__all";
+@import "unload__choose";
+@import "unload__info";

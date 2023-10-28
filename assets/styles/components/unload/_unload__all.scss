@@ -1,0 +1,35 @@
+.unload{
+  &__all{
+    @include start-at("xslg") {
+      margin-right: 15px;
+      width: 35%;
+    }
+  }
+  
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__list-link:first-child{
+    @include active-by("xslg") {
+      margin-top: 60px;
+    }
+  }
+  &__list-link{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  &__border-green{
+    border-left: 10px solid var(--color_success);
+  }
+  &__border-red{
+    border-left: 10px solid var(--color_danger);
+  }
+
+}
+@import '../notice/data-color' 

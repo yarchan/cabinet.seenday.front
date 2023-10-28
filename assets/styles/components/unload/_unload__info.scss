@@ -1,0 +1,14 @@
+.unload{
+  &__info{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  &__title{
+    font-size: 18px;
+    @include start-at("xslg") {
+      font-size: 20px;
+    }
+  }
+}

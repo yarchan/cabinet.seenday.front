@@ -1,0 +1,81 @@
+.unload{
+  &__choose{
+
+  }
+  &__choose-wrapper{
+    position: fixed;
+    right: 30px;
+    @include active-by("xslg") {
+      position: relative;
+      right: auto;
+      width: 100%;
+    }
+    @include start-at("xslg") {
+      width: calc(65% - 75px);
+    }
+    @include start-at("lg") {
+      width: calc(65% - 100px);
+    }
+    @include start-at("xl") {
+      width: calc(65% - 220px);
+    }
+  }
+  &__choose-content{
+
+  }
+  &__nochoose{
+    text-align: center;
+  }
+  &__id{
+    padding: 10px;
+    margin-right: 10px;
+    background-color: var(--bg_navbar);
+    color: var(--color_white);
+  }
+  &__content-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__content-title-item{
+    display: flex;
+    align-items: center;
+  }
+  &__description{
+    padding: 10px;
+  }
+  &__description-title{
+    font-size: 16px;
+  }
+  &__description-subtitle{
+    padding: 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  &__btn-close-wrapper{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__btn-close{
+    padding: 10px 5px;
+    cursor: pointer;
+    border: none;
+    color: var(--color_white);
+    background-color: var(--color_danger);
+  }
+  &__btn{
+    background: none;
+    border: none;
+  }
+}
+.position-fixed{
+  @include active-by("md") {
+    width: calc(100% - 20px) !important;
+  }
+  @include active-by("xslg") {
+    position: fixed !important;
+    width: calc(100% - 30px);
+  }
+}
+
+@import '../cabinet/links'
